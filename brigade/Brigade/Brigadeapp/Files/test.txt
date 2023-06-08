@@ -1,0 +1,20 @@
+ private boolean distanceinMeters(Double latitude, Double longitude) {
+        try {
+            Location loc1=new Location("");
+            loc1.setLatitude(latitude);
+            loc1.setLongitude(longitude);
+            Location loc2=new Location("");
+            loc2.setLatitude(sourceLatLng.latitude);
+            loc2.setLongitude(sourceLatLng.longitude);
+            float distance=loc1.distanceTo(loc2);
+            if (distance<15){
+                return true;
+            }else {
+                return false;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+     return false;
+
+    }

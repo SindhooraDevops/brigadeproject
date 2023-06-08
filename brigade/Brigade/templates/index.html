@@ -1,0 +1,1407 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./images/fav-icon.png">
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/jquery.fancybox.min.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/video-js.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <title>Brigade Citadel</title>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W5VL3C8');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5VL3C8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- FirstHive Tag Manager -->
+<script type="text/javascript">
+var _mtm = _mtm || [];
+_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://firsthive.com/engage/piwik/js/container_612z8pVD.js'; s.parentNode.insertBefore(g,s);
+var _paq = _paq || [];
+</script>
+<!-- End FirstHive Tag Manager -->
+<!--  new Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2QHRMC');</script>
+<!--  new Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PZTX82F');</script>
+<!-- End Google Tag Manager -->
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+  </head>
+  <body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2QHRMC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZTX82F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+    <!-- Header Section Starts From Here -->
+    <header>
+      <nav class="navbar navbar-expand-lg " id="nav">
+        <div class="container">
+          <div class="row w-100">
+            <div class="col-md-2 col-sm-2 col-6 col-lg-2">
+                <a class="navbar-brand p-0" href="#"><img src="{{ logos.main_logo.url }}" /></a>
+            </div>
+            <div class="mobilebar col-sm-10 col-6 d-lg-none align-self-center">
+              <!-- MENU TOGGLE BUTTON -->
+              <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+                <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                  <title>Toggle Menu</title>
+                  <g>
+                    <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                    <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+                    <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          <div class="col-md-10 col-sm-10 col-lg-10 align-self-center">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sectionOne">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#configration">Configuration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#master">Brochure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#catidal">Amenities</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#videosection">Walkthrough </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#locality">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn-type1 " href="javascript:void(0)">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        </div>
+        <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+          <li class="nav__item"><a href="#sectionOne" class="nav__link">Overview</a></li>
+          <li class="nav__item"><a href="#configration" class="nav__link">Configuration</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Brouchure</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="#catidal" class="nav__link">Amenities</a></li>
+          <li class="nav__item"><a href="#videosection" class="nav__link">Walkthrough Video</a></li>
+          <li class="nav__item"><a href="#locality" class="nav__link">Location</a></li>
+          <li class="nav__item"> <a class="btn-type1 " href="#enquireNow">Enquire Us</a>
+          </li>
+        </ul>
+      <!-- ACTUAL NAVIGATION MENU -->
+      </nav>
+
+    </header>
+    <!-- Header Section Ends Here -->
+
+    <main>
+
+      <!-- <section>
+            <div class="float-img">
+                         <img src="./images/images/yeb.gif" alt="gif" class="img-fluid"/>
+                     </div>
+          </section> -->
+
+          <section class="band">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3>This is an official Brigade Group Website - © 2023 Brigade Group. All rights reserved</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid" id="sectionOne">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 desk-cita">
+              <picture>
+                  <img src="static/images/images/Citadel_1200x650_v1.jpg" alt="Banner" class="img-fluid w-100">
+                <source srcset="./images/images/Citadel_1200x650_v1.webp" type="image/webp">
+                <source srcset="./images/images/Citadel_1200x650_v1.jpg" type="image/jpeg">
+              </picture>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 mob-cita">
+              <picture>
+                  <img src="static/images/images/Citadel_640x400_v1.jpg" alt="Banner" class="img-fluid w-100">
+                <source srcset="./images/images/Citadel_640x400_v1.webp" type="image/webp">
+                <source srcset="./images/images/Citadel_640x400_v1r.jpg" type="image/jpeg">
+              </picture>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 ">
+              <div class="d-flex flex-column h-100 justify-content-between">
+                <div class="sectionOneContent">
+                  <h1>Brigade Citadel</h1>
+                  <h4>Introducing Luxurious 2 & 3 BHK Homes at Hyderabad.</h4>
+                </div>
+                <div>
+                  <span class="location"><i class="fas fa-map-marker-alt"></i>MOTI NAGAR, HYDERABAD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="enquireNow" class="container-fluid">
+        <div class="container w-85">
+            <div class="alert alert-success" style="display:none;" role="alert" id="enquireNow_success"></div>
+            <div class="alert alert-danger" style="display:none;" role="alert" id="enquireNow_error"></div>
+          <div class="row ">
+            <div class="col-lg-12">
+              <form action="/enquiry-form/" method="POST">
+                {% csrf_token %}
+                <div class="row justify-content-center">
+                  <input type="hidden" name="form_type" value="enquiry_form">
+                    <h3 class="titleHeading text-center mt-2 mb-3">Enquire Now</h3>
+                  
+                  <div class="col2 name">
+                    <input name = "first_name" type="text" class="form-control c4c_SectionError" id="c4c_Section_name" placeholder="Please enter the First name" aria-label="Name">
+                  </div>
+                  <div class="col2 name">
+                    <input name="last_name" type="text" class="form-control c4c_SectionError" id="c4c_Section_name_last" placeholder="Please enter the Last name" aria-label="Name">
+                  </div>
+                  <div class="col2 email">
+                    <input name="email" type="email" id="c4c_Section_email" class="form-control c4c_SectionError" placeholder="Please enter the email" aria-label="Email">
+                  </div>
+                  <div class="col2 phone">
+                    <input name="mobile_number" type="tel" id="c4c_Section_phone" class="form-control c4c_SectionError" placeholder="Please enter the mobile number" aria-label="Phone Number">
+                  </div>
+                   <div class="col3 sub-to">
+                    <div id="c4c_Section_Enquire_Now_cap"></div>
+                  </div>
+
+                  <div class="col3 sub-to">
+                    <button type="submit" class="btn btn-type1" id="c4c_Section_Enquire_Now" formId="" mode="mode_section">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="container-fluid" id="overview">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-lg-5 col-sm-12">
+              <h3 class="titleHeading">{{ overview.title }}</h3>
+              {% for content in overview.content.splitlines %}
+                <p>{{ content }} {{ overview.web_image.url }}</p>
+              {% endfor %}
+              
+            </div>
+            <div class="col-md-7 col-lg-7 col-sm-12">
+              <picture>
+                <source srcset="{{ overview.web_image.url }}" type="image/webp">
+                <source srcset="{{ overview.png_image.url }}" type="image/jpeg">
+                <img src="{{ overview.png_image.url }}" alt="Title" class="img-fluid">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="container-fluid" id="configration">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="titleHeading">Configuration</h3>
+              <div class="mobile-table d-lg-none d-md-none">
+                <div class="mob-table-body">
+                  <div class="mob-head">
+                    Configuration
+                  </div>
+                  <div class="mob-row">
+                    2 Bedrooms
+                  </div>
+                  <div class="mob-row">
+                    3Bedrooms
+                  </div>
+                </div>
+
+                <div class="mob-table-body">
+                  <div class="mob-head">
+                    SBA (Sq.Ft)
+                  </div>
+                  <div class="mob-row">
+                    1174 - 1366
+                  </div>
+                  <div class="mob-row">
+                    1583 - 1793
+                  </div>
+                </div>
+
+                <div class="mob-table-body">
+                  <div class="mob-head">
+                    Price
+                  </div>
+                  <div class="mob-row">
+                    Rs.90 L Onwards
+                  </div>
+                  <div class="mob-row">
+                    Rs 1.20 Cr Onwards
+                  </div>
+                </div>
+              </div>
+
+              <table class="table my-4 desktop-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Configuration Type</th>
+                    <th scope="col">SBA(Sq.Ft)</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Configuration Type">2 Bedrooms</td>
+                    <td data-label="SBA (Sq.Ft)">1174 - 1366</td>
+                    <td data-label="Price">Rs.90 L Onwards</td>
+                  </tr>
+                  <tr>
+                    <td  data-label="Configuration Type">3 Bedrooms</td>
+                    <td  data-label="Configuration Type">1583 - 1793</td>
+                    <td  data-label="Configuration Type">Rs 1.20 Cr Onwards</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="container-fluid" id="pric-lan">
+        <div class="container w-85">
+          <div class="row justify-content-evenly">
+            <h3 class="titleHeading text-center mb-3">Configuration</h3>
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 item mt-3">
+              <div class="card item-card card-block">
+                  <h2 class="item-card-title mt-3 mb-3 ">2 BHK</h2>
+                  <div class="sdf"></div>
+                  <h2 class="item-card-title mt-3 mb-3 ">1174 - 1366<br/>SQ.FT.</h2>
+                  <div class="sdf"></div>
+                  <h6><a class="intrested" href="javascript:void(0)">&#8377; CHECK PRICE</a></h6>
+            </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 item mt-3">
+              <div class="card item-card card-block">
+                  <h2 class="item-card-title mt-3 mb-3 ">3 BHK</h2>
+                  <div class="sdf"></div>
+                  <h2 class="item-card-title mt-3 mb-3 ">1583 - 1793<br/>SQ.FT.</h2>
+                  <div class="sdf"></div>
+                  <h6><a class="intrested" href="javascript:void(0)">&#8377; CHECK PRICE</a></h6>
+            </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="container-fluid" id="master">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col=lg-4 col-sm-12 align-self-center">
+              <h3 class="titleHeading">Masterplan of your<br> dream home</h3>
+              <p>Don’t hesitate to download the brochure to know more details of this project.</p>
+              <a href="javascript:void(0)" class="dwnbro">Download Brochure</a>
+            </div>
+            <div class="col-md-8 col=lg-8 col-sm-12">
+              <picture>
+                <img src="static/images/webp/image3.webp" alt="Title" class="img-fluid">
+                <source srcset="./images/webp/image3.webp" type="image/webp">
+                <source srcset="./images/images/image3.png" type="image/jpeg">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid" id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="titleHeading">Gallery</h3>
+            </div>
+            <div class="col-lg-12">
+              <div class="owl-carousel" id="gallery-img">
+                {% for gallery in galleries %}
+                <div class="item">
+                  <a class="fancybox-fac" rel="fancybox-fac" href="{{ gallery.image.url }}">
+                  <picture>
+                    <img src="{{ gallery.web_image.url }}" type="image/webp">
+                    <!-- <img src="{{ gallery.image.url }}" type="image/jpeg"> -->
+                    <source srcset="{{ gallery.image.url }}" alt="Gym">
+                  </picture>
+                  </a>
+                  <div class="item-text">
+                    <h6>{{ gallery.name }}</h6>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid" id="catidal">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mb-4">
+              <h3 class="titleHeading">Amenities</h3>
+            </div>
+          </div>
+          <div class="row">
+            {% for source in sources %}
+              <div class="col-6 col-lg-large col-md-3 col-sm-6 mb-3">
+                <div class="catidalSec">
+                  <picture>
+                    <source srcset="{{ source.image.url }}" type="image/webp">
+                    <source srcset="{{ source.image.url }}" type="image/jpeg">
+                    <img src="{{ source.image.url }}" alt="image">
+                  </picture>
+                </div>
+                <div class="card-block ">
+                  <h6>{{ source.name }}</h6>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid" id="videosection">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="titleHeading">Walkthrough</h3>
+              <div class="embed-responsive embed-responsive-21by9">
+              <iframe width="100%" height="450" src="{{ video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid" id="locality">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="titleHeading">Know your locality</h3>
+            </div>
+            <div class="col-md-12 col-lg-5 col-12 mb-md-4">
+              <iframe src="{{lc_map}}" width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-12 col-lg-7 col-12 align-self-center">
+              <div class="row">
+                {% for locality in localities %}
+                  <div class="col-md-6 col-lg-6 col-12">
+                    <div class="card flex-row">
+                      <div class="border-0">
+                        <picture>
+                          <source srcset="{{ locality.image.url }}" type="image/webp">
+                          <source srcset="{{ locality.image.url }}" type="image/jpeg">
+                          <img src="{{ locality.image.url }}" alt="Party Hall">
+                        </picture>
+                      </div>
+                      <div class="card-block px-2">
+                          <h4 class="card-title">{{ locality.title }}</h4>
+                          <p class="card-text">{{ locality.discription }}</p>
+                      </div>
+                  </div>
+                  </div>
+                {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="container-fluid" id="brigade-world">
+          <div class="row">
+            <div class="col-lg-12 p-0">
+              <picture>
+                 <img src="static/images/images/brigadeworld.png" alt="Party Hall" class="img-fluid">
+                <source srcset="./images/images/brigadeworld.jpg" type="image/webp">
+                <source srcset="./images/images/brigadeworld.jpg" type="image/jpeg">
+              </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-sm-12 col-12 p-0 p-0">
+          <div class="footerForm">
+            <button type="button" class="btn-close d-md-none d-lg-none" aria-label="Close"></button>
+            <h3 class="mb-4">Enquire Now</h3>
+            <form action="/enquiry-form/" method="POST">
+              {% csrf_token %}
+              <input type="hidden" name="form_type" value="enquiry_form" >
+              <div class="row">
+                <div class="alert alert-success" style="display:none;" role="alert" id="footerEnquireNow_success"></div>
+                <div class="alert alert-danger" style="display:none;" role="alert" id="footerEnquireNow_error"></div>
+                <div class="col-lg-6 col-md-12 col-sm-6 col-12 mb-4 ml-0">
+                  <div class="form-group">
+                  <label for="name">First Name</label>
+                  <input name="first_name" type="text" class="form-control c4c_SectionFooterError" id="c4c_Section_Footer_name" placeholder="Please enter the First name">
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-6 col-12 mb-4 ml-0">
+                    <div class="form-group">
+                    <label for="name">Last Name</label>
+                    <input name="last_name" type="text" class="form-control c4c_SectionFooterError" id="c4c_Section_Footer_last_name" placeholder="Please enter the Last name">
+                  </div>
+                  </div>
+                <div class="col-lg-6 col-md-12 col-sm-6 col-12 mb-4">
+                  <div class="form-group">
+                  <label for="name">Mobile Number</label>
+                  <input name="mobile_number" type="tel" class="form-control c4c_SectionFooterError" id="c4c_Section_Footer_phone" placeholder="Please enter the mobile number">
+                </div>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-6 col-12 mb-3">
+                  <div class="form-group">
+                  <label for="email">Email ID</label>
+                  <input name="email" type="email" class="form-control c4c_SectionFooterError" id="c4c_Section_Footer_email" placeholder="Please enter the email-id">
+                </div>
+              </div>
+            </div>
+            <!-- -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-6 col-12 mb-3">
+                  <div class="form-group">
+                  <div id="c4c_Section_Footer_Now_cap"></div>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+
+              <div class="row">
+                <div class="col-lg-12 col-md-12 mt-2 mb-4">
+                  <div class="form-check">
+                    <input class="form-check-input" required checked="" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                      ‘I Agree to the <a href="https://www.brigadegroup.com/terms" target="_blank"> Terms & Conditions</a>’
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-sub" id="c4c_Section_Footer_Now" formId="" mode="">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-12">
+          <div class="innerDiv">
+            <ul class="nav flex-column">
+              <h5>RERA Registration No -</h5>
+              <li>Ph-I TS RERA Registration No. P02200002237</li>
+              <li>Ph-II TS RERA Registration No. P02200002392</li>
+              <li>Ph-III TS RERA Registration No. P02200002548</li>
+              <li>Ph-IV TS RERA No. P02200004085</li>
+            </ul>
+
+            <h4>For More Information</h4>
+            <p class="icon--item"><a  href="tel:6366960660" class="more"><img src="./images/icons/call.svg"/>6366960660</a></p>
+            <h6><a class="intrested" href="javascript:void(0)">I'M INTERESTED</a></h6>
+
+            <img src="{{ logos.secondary_logo.url }}" />
+            <p class="copyright">Copyright @<span id="year"></span> Brigade &nbsp; &nbsp; Enterprise Limited &nbsp; &nbsp; ALL RIGHTS RESERVED</p>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
+
+    <div class="mobile-slide">
+      <div class="d-flex justify-content-around">
+        <div class="align-self-center"><a href="tel:6366960660"><img src="./images//icons/callwhite.svg" />CALL NOW</a></div>
+        <div class="align-self-center"><hr></div>
+        <div class="align-self-center mob-enq"><a href="javascript:void(0)"><img src="./images//icons/emailwhite.svg" />ENQUIRE NOW</a></div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalBrouchure" tabindex="-1" aria-labelledby="modalBrouchure" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Download Brochure</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <form action="/enquiry-form/" method="POST">
+            {% csrf_token %}
+              <input type="hidden" name="form_type" value="download-brochure">
+              <div class="alert alert-success" style="display:none;" role="alert" id="downloadEnquireNow_success"></div>
+              <div class="alert alert-danger" style="display:none;" role="alert" id="downloadEnquireNow_error"></div>
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2 d-block">First Name</label>
+                <input name="first_name" type="text" class="form-control c4c_SectionDownloadError" id="c4c_Section_Download_name" />
+              </div>
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2 d-block">Last Name</label>
+                <input name="last_name" type="text" class="form-control c4c_SectionDownloadError" id="c4c_Section_Download_last_name"  />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email" class="mb-2 d-block">Email</label>
+                <input name="email" type="email" class="form-control c4c_SectionDownloadError" id="c4c_Section_Download_email" />
+              </div>
+              <div class="form-group mb-3">
+                <label for="phone" class="mb-2 d-block">Phone</label>
+                <input  name="mobile_number" type="tel" class="form-control c4c_SectionDownloadError" id="c4c_Section_Download_phone" />
+              </div>
+               <!-- -->
+              <div class="form-group mb-3">
+               <div id="c4c_Section_Download_Now_cap"></div>
+              </div>              
+              <!-- -->
+
+              <div class="form-group mb-3">
+                <a href ="/index/download_file" ><button type="submit" class="btn btn-type1" id="c4c_Section_Download_Now" formId="" mode="" >Submit</button></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalFormOne" tabindex="-1" aria-labelledby="modalFormOne" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Enquiry Now</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="/enquiry-form/" method="POST">
+              {% csrf_token %}
+              <input type="hidden" name="form_type" value="enquiry_form">
+              <div class="alert alert-success" style="display:none;" role="alert" id="modalFormOne_success"></div>
+              <div class="alert alert-danger" style="display:none;" role="alert" id="modalFormOne_error"></div>
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2 d-block">First Name</label>
+                <input name="first_name" type="text" class="form-control" id="modalBrouchurename" />
+              </div>
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2 d-block">Last Name</label>
+                <input name="last_name" type="text" class="form-control" id="modalBrouchurenamelast"  />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email" class="mb-2 d-block">Email</label>
+                <input  name="email" type="email" class="form-control modalBrouchureError" id="modalBrouchureemail"  />
+              </div>
+              <div class="form-group mb-3">
+                <label for="phone" class="mb-2 d-block">Phone</label>
+                <input   name="mobile_number" type="tel" class="form-control modalBrouchureError" id="modalBrouchurephone"  />
+              </div>
+              <!-- -->
+              <div class="form-group mb-3">
+                <div id="modalBrouchure_Enquire_Now_cap"></div>
+              </div>
+              
+              <!-- -->
+
+              <div class="form-group mb-3">
+                <button type="submit" class="btn btn-type1" id="modalBrouchure_Enquire_Now" formId="" >Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="intrested" tabindex="-1" aria-labelledby="intrested" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Enquiry Now</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="/enquiry-form/" method="post">
+              {% csrf_token %}
+              <input type="hidden" name="form_type" value="enquiry_form">
+              <div class="alert alert-success" style="display:none;" role="alert" id="intrested_success"></div>
+              <div class="alert alert-danger" style="display:none;" role="alert" id="intrested_error"></div>
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2 d-block">First Name</label>
+                <input name="first_name" type="text" class="form-control popupError" id="popupname" />
+              </div>
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2 d-block">Last Name</label>
+                <input name="last_name" type="text" class="form-control popupError" id="popupnamelast"  />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email" class="mb-2 d-block">Email</label>
+                <input  name="email" type="email" class="form-control popupError" id="popupemail"  />
+              </div>
+              <div class="form-group mb-3">
+                <label for="phone" class="mb-2 d-block">Phone</label>
+                <input  name="mobile_number" type="tel" class="form-control popupError" id="popupphone"  />
+              </div>
+              <div class="form-group mb-3">
+                 <div id="popupC4C_Call_cap"></div>
+              </div>  
+
+              <div class="form-group mb-3">
+                <button type="submit" class="btn btn-type1" id="popupC4C_Call" mode="mode_section" formId="">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input type="hidden" id="c4c_modeOfEnquiry" value="Z07">
+
+    <input type="hidden" id="c4c_projectDescriptionLead" value="Brigade Citadel">
+
+    <input type="hidden" id="c4c_source" value="Z46">
+
+    <input type="hidden" id="c4c_campaign" value="12605">
+
+    <input type="hidden" id="c4c_location" value="06">
+
+    <input type="hidden" id="c4c_utmCampaign" value="CIT_DIG_FB_WEBENZA_FY22_23">
+
+    <input type="hidden" id="c4c_secondaryLeadSource" value="39">
+
+    <input type="hidden" id="c4c_website" value="www.brigadecitadel.com">
+
+    <input type="hidden" id="c4c_project" value="D001">
+
+    <input type="hidden" id="c4c_projctCd1" value="D001">
+    <input type="hidden" id="c4c_projectCode_n" value="D005">
+
+    <script src="{%  static 'js/jQuery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+    <script src="{% static 'js/video.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <!-- <script src="c4c_api.js"></script> -->
+    <script type="text/javascript">
+     var verifyCallback = function(response) {
+        alert(response);
+      };
+      var c4c_Section_Enquire_Now_cap;
+      var c4c_Section_Footer_Now_cap;
+      var c4c_Section_Download_Now_cap;
+      var modalBrouchure_Enquire_Now_cap;
+      var popupC4C_Call_cap;
+
+      var onloadCallback = function() {
+        // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
+        // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
+        c4c_Section_Enquire_Now_cap = grecaptcha.render('c4c_Section_Enquire_Now_cap', {
+          'sitekey' : '6LdlYzgiAAAAADvwG34m3sPRzUim640KSK6020Po',
+          'theme' : 'light'
+        });
+        c4c_Section_Footer_Now_cap = grecaptcha.render(document.getElementById('c4c_Section_Footer_Now_cap'), {
+          'sitekey' : '6LdlYzgiAAAAADvwG34m3sPRzUim640KSK6020Po'
+        });
+        c4c_Section_Download_Now_cap = grecaptcha.render(document.getElementById('c4c_Section_Download_Now_cap'), {
+          'sitekey' : '6LdlYzgiAAAAADvwG34m3sPRzUim640KSK6020Po'
+        });
+
+        modalBrouchure_Enquire_Now_cap = grecaptcha.render(document.getElementById('modalBrouchure_Enquire_Now_cap'), {
+          'sitekey' : '6LdlYzgiAAAAADvwG34m3sPRzUim640KSK6020Po'
+        });
+
+        popupC4C_Call_cap = grecaptcha.render(document.getElementById('popupC4C_Call_cap'), {
+          'sitekey' : '6LdlYzgiAAAAADvwG34m3sPRzUim640KSK6020Po'
+        });                        
+        
+      };
+    $(document).ready(function(){
+
+     
+/* c4c_Section_Enquire_Now start */
+$( "body" ).delegate( "#c4c_Section_Enquire_Now", "click", function() {
+if (grecaptcha.getResponse(c4c_Section_Enquire_Now_cap)) {
+         		  $("#c4c_Section_Enquire_Now").attr("formid","Section Enquire Now");
+        var FormId = $("#c4c_Section_Enquire_Now").attr("formid");
+
+        var c4c_Section_name = $("#c4c_Section_name").val();
+        var c4c_Section_name_last = $("#c4c_Section_name_last").val();
+        
+        var c4c_Section_email = $("#c4c_Section_email").val();
+        var c4c_Section_phone = $("#c4c_Section_phone").val();
+        var phoneStrCount = $("#c4c_Section_phone").val().length;
+        var phoneStrsplit = $("#c4c_Section_phone").val().split("");        
+
+        var c4c_modeOfEnquiry = $("#c4c_modeOfEnquiry").val();
+        var c4c_projectDescriptionLead = $("#c4c_projectDescriptionLead").val();
+        var c4c_source = $("#c4c_source").val();
+        var c4c_campaign = $("#c4c_campaign").val();
+        var c4c_location = $("#c4c_location").val();
+        var c4c_utmCampaign = $("#c4c_utmCampaign").val();
+        var c4c_secondaryLeadSource = $("#c4c_secondaryLeadSource").val();
+        var c4c_website = $("#c4c_website").val();
+        var c4c_project = $("#c4c_project").val();
+
+        var c4c_projctCd1 = $("#c4c_projctCd1").val();
+        var c4c_projectCode_n = $("#c4c_projectCode_n").val();        
+
+        var mode_section = $("#c4c_Section_Enquire_Now").attr("mode_section");
+        var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+        if(c4c_Section_name==''){
+            $(".c4c_SectionError").css('border-color', '');
+            $("#c4c_Section_name").css('border-color', 'red');
+            $("#c4c_Section_name").css('border', '1px solid red');
+            return false;
+            /*
+        } else if(c4c_Section_name_last==''){
+            $(".c4c_SectionError").css('border-color', '');
+            $("#c4c_Section_name_last").css('border-color', 'red');
+            $("#c4c_Section_name_last").css('border', '1px solid red');
+            return false; */
+        } else if(c4c_Section_email==''){
+            $(".c4c_SectionError").css('border-color', '');
+            $("#c4c_Section_email").css('border-color', 'red');
+            $("#c4c_Section_email").css('border', '1px solid red');
+            return false;        
+        } else if(!pattern.test(c4c_Section_email)){
+            $(".c4c_SectionError").css('border-color', '');
+            $("#c4c_Section_email").css('border-color', 'red');
+            $("#c4c_Section_email").css('border', '1px solid red');
+            return false;
+        } else if(c4c_Section_phone==''){
+            $(".c4c_SectionError").css('border-color', '');
+            $("#c4c_Section_phone").css('border-color', 'red');
+            $("#c4c_Section_phone").css('border', '1px solid red');
+            return false;
+        } else if(phoneStrCount!=10){
+            $(".c4c_SectionError").css('border-color', '');
+            $("#c4c_Section_phone").css('border-color', 'red');
+            $("#c4c_Section_phone").css('border', '1px solid red');
+            
+            $("#enquireNow_error").css('display','block');
+            $("#enquireNow_error").html("Please Enter 10 digit Mobile Number Only");            
+            return false;
+        } else if(phoneStrsplit[0]==0){
+            $(".modalBrouchureError").css('border-color', '');
+            $("#modalBrouchurephone").css('border-color', 'red');
+            $("#modalBrouchurephone").css('border', '1px solid red');
+            
+            $("#modalFormOne_error").css('display','block');
+            $("#modalFormOne_error").html("Please Enter a valid 10 digit Mobile Number starting without zero");            
+            return false;                        
+        } else {
+            $(".c4c_SectionError").css('border-color', '');
+            $("#enquireNow_error").css('display','none');
+            $("#enquireNow_error").html("");
+            $("#enquireNow_success").css('display','block');
+            $("#enquireNow_success").html("Please Wait Loading...!");
+            $("#c4c_Section_Enquire_Now").css('display','none');
+            //gcap start
+
+        // add token to form
+     
+            //ajax start
+                $("#c4c_Section_Enquire_Now").html('Loading');
+                $.ajax({
+                    //url: "c4c_api_call.php",
+                    url: "final_v2.php",
+                    type: "post",
+                    data: {'c4c_Section_name':c4c_Section_name,'c4c_Section_name_last':c4c_Section_name_last,'c4c_Section_email':c4c_Section_email,'c4c_Section_phone':c4c_Section_phone,'mode':mode_section,'c4c_modeOfEnquiry':c4c_modeOfEnquiry,'c4c_projectDescriptionLead':c4c_projectDescriptionLead,'c4c_source':c4c_source,'c4c_campaign':c4c_campaign,'c4c_location':c4c_location,'c4c_utmCampaign':c4c_utmCampaign,'c4c_secondaryLeadSource':c4c_secondaryLeadSource,'c4c_website':c4c_website,'c4c_project':c4c_project,'FormId':FormId,'c4c_projctCd1':c4c_projctCd1,'c4c_projectCode_n':c4c_projectCode_n} ,
+                    success: function (response) {
+                    
+                    var results = JSON.parse(response);
+                    console.log(results);
+                    if(results.status){
+                      window.dataLayer = window.dataLayer || []
+                      dataLayer.push({
+                       'event': 'banner-form-submission-citadel',
+                       'formType': FormId,
+                       'formPosition': 'Footer'
+                      });
+                        $("#enquireNow_success").css('display','block');
+                        $("#enquireNow_success").html(results.msg);
+                        $("#c4c_Section_Enquire_Now").html('Submit');
+                        var pdfUrl = 'https://www.brigadecitadel.com/moti-nagar/thankyou.html';
+                        var parentOpener = window.opener;
+                        window.opener = null;
+                        window.open(pdfUrl,"_blank");
+                        window.opener = parentOpener;                        
+                    }
+                       
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                       console.log(textStatus, errorThrown);
+                    }
+                });
+                //ajax post a data now end
+            //ajax end
+
+            //gcap end 
+
+        }
+         		//form.submit();
+         		} else {
+         		alert('Please confirm captcha to proceed');
+         		}
+});  
+/* c4c_Section_Enquire_Now start */
+/* c4c_Section_Footer_Now start */
+$( "body" ).delegate( "#c4c_Section_Footer_Now", "click", function() {
+if (grecaptcha.getResponse(c4c_Section_Footer_Now_cap)) {
+         		 $("#c4c_Section_Footer_Now").attr("formid","Footer Contact Us");
+        var FormId = $("#c4c_Section_Footer_Now").attr("formid");
+
+        var c4c_Section_name = $("#c4c_Section_Footer_name").val();
+        var c4c_Section_name_last = $("#c4c_Section_Footer_last_name").val();        
+        var c4c_Section_email = $("#c4c_Section_Footer_email").val();
+        var c4c_Section_phone = $("#c4c_Section_Footer_phone").val();
+        var phoneStrCount = $("#c4c_Section_Footer_phone").val().length;
+        var phoneStrsplit = $("#c4c_Section_Footer_phone").val().split("");        
+
+        var c4c_modeOfEnquiry = $("#c4c_modeOfEnquiry").val();
+        var c4c_projectDescriptionLead = $("#c4c_projectDescriptionLead").val();
+        var c4c_source = $("#c4c_source").val();
+        var c4c_campaign = $("#c4c_campaign").val();
+        var c4c_location = $("#c4c_location").val();
+        var c4c_utmCampaign = $("#c4c_utmCampaign").val();
+        var c4c_secondaryLeadSource = $("#c4c_secondaryLeadSource").val();
+        var c4c_website = $("#c4c_website").val();
+        var c4c_project = $("#c4c_project").val();
+
+        var c4c_projctCd1 = $("#c4c_projctCd1").val();
+        var c4c_projectCode_n = $("#c4c_projectCode_n").val();   
+
+        var mode_section = $("#c4c_Section_Footer_Now").attr("mode_section");
+        var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+        if(c4c_Section_name==''){
+            $(".c4c_SectionFooterError").css('border-color', '');
+            $("#c4c_Section_Footer_name").css('border-color', 'red');
+            $("#c4c_Section_Footer_name").css('border', '1px solid red');
+            return false;
+            /*
+        } else if(c4c_Section_name_last==''){
+            $(".c4c_SectionFooterError").css('border-color', '');
+            $("#c4c_Section_name_last").css('border-color', 'red');
+            $("#c4c_Section_name_last").css('border', '1px solid red');
+            return false; */        
+        } else if(c4c_Section_email==''){
+            $(".c4c_SectionFooterError").css('border-color', '');
+            $("#c4c_Section_Footer_email").css('border-color', 'red');
+            $("#c4c_Section_Footer_email").css('border', '1px solid red');
+            return false;        
+        } else if(!pattern.test(c4c_Section_email)){
+            $(".c4c_SectionFooterError").css('border-color', '');
+            $("#c4c_Section_Footer_email").css('border-color', 'red');
+            $("#c4c_Section_Footer_email").css('border', '1px solid red');
+            return false;
+        } else if(c4c_Section_phone==''){
+            $(".c4c_SectionFooterError").css('border-color', '');
+            $("#c4c_Section_Footer_phone").css('border-color', 'red');
+            $("#c4c_Section_Footer_phone").css('border', '1px solid red');
+            return false;
+        } else if(phoneStrCount!=10){
+            $(".c4c_SectionFooterError").css('border-color', '');
+            $("#c4c_Section_Footer_phone").css('border-color', 'red');
+            $("#c4c_Section_Footer_phone").css('border', '1px solid red');
+            
+            $("#footerEnquireNow_error").css('display','block');
+            $("#footerEnquireNow_error").html("Please Enter 10 digit Mobile Number Only");            
+            return false;
+        } else if(phoneStrsplit[0]==0){
+            $(".modalBrouchureError").css('border-color', '');
+            $("#modalBrouchurephone").css('border-color', 'red');
+            $("#modalBrouchurephone").css('border', '1px solid red');
+            
+            $("#modalFormOne_error").css('display','block');
+            $("#modalFormOne_error").html("Please Enter a valid 10 digit Mobile Number starting without zero");            
+            return false;                        
+        } else {
+            $(".c4c_SectionFooterError").css('border-color', '');
+            $("#footerEnquireNow_error").css('display','none');
+            $("#footerEnquireNow_error").html("");
+            $("#footerEnquireNow_success").css('display','block');
+            $("#footerEnquireNow_success").html("Please Wait Loading...!");
+            $("#c4c_Section_Footer_Now").css('display','none');            
+             //ajax start
+                $("#c4c_Section_Footer_Now").html('Loading');
+                $.ajax({
+                    url: "final_v2.php",
+                    type: "post",
+                    data: {'c4c_Section_name':c4c_Section_name,'c4c_Section_name_last':c4c_Section_name_last,'c4c_Section_email':c4c_Section_email,'c4c_Section_phone':c4c_Section_phone,'mode':mode_section,'c4c_modeOfEnquiry':c4c_modeOfEnquiry,'c4c_projectDescriptionLead':c4c_projectDescriptionLead,'c4c_source':c4c_source,'c4c_campaign':c4c_campaign,'c4c_location':c4c_location,'c4c_utmCampaign':c4c_utmCampaign,'c4c_secondaryLeadSource':c4c_secondaryLeadSource,'c4c_website':c4c_website,'c4c_project':c4c_project,'FormId':FormId,'c4c_projctCd1':c4c_projctCd1,'c4c_projectCode_n':c4c_projectCode_n} ,
+                    success: function (response) {
+                    var results = JSON.parse(response);
+                    console.log(results);
+                    if(results.status){
+                      window.dataLayer = window.dataLayer || []
+                      dataLayer.push({
+                       'event': 'contact-form-footer-submission-citadel',
+                       'formType': FormId,
+                       'formPosition': 'Footer'
+                      });
+                        $("#footerEnquireNow_success").css('display','block');
+                        $("#footerEnquireNow_success").html(results.msg);
+                        $("#c4c_Section_Footer_Now").html('Submit');
+                        var pdfUrl = 'https://www.brigadecitadel.com/moti-nagar/thankyou.html';
+                        var parentOpener = window.opener;
+                        window.opener = null;
+                        window.open(pdfUrl,"_blank");
+                        window.opener = parentOpener;                        
+                    }                    
+                       
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                       console.log(textStatus, errorThrown);
+                    }
+                });
+                //ajax post a data now end
+            //ajax end
+        }
+         		//form.submit();
+         		} else {
+         		alert('Please confirm captcha to proceed');
+         		}
+});  
+/* c4c_Section_Footer_Now start */
+/* c4c_Section_Download_Now start */
+$( "body" ).delegate( "#c4c_Section_Download_Now", "click", function() {
+  
+if (grecaptcha.getResponse(c4c_Section_Download_Now_cap)) {
+        $("#c4c_Section_Download_Now").attr("formid","Download Brochure");
+        var FormId = $("#c4c_Section_Download_Now").attr("formid");
+
+        var c4c_Section_name = $("#c4c_Section_Download_name").val();
+        var c4c_Section_name_last = $("#c4c_Section_Download_last_name").val();
+        var c4c_Section_email = $("#c4c_Section_Download_email").val();
+        var c4c_Section_phone = $("#c4c_Section_Download_phone").val();
+        var phoneStrCount = $("#c4c_Section_Download_phone").val().length;
+        var phoneStrsplit = $("#c4c_Section_Download_phone").val().split("");        
+
+        var c4c_modeOfEnquiry = $("#c4c_modeOfEnquiry").val();
+        var c4c_projectDescriptionLead = $("#c4c_projectDescriptionLead").val();
+        var c4c_source = $("#c4c_source").val();
+        var c4c_campaign = $("#c4c_campaign").val();
+        var c4c_location = $("#c4c_location").val();
+        var c4c_utmCampaign = $("#c4c_utmCampaign").val();
+        var c4c_secondaryLeadSource = $("#c4c_secondaryLeadSource").val();
+        var c4c_website = $("#c4c_website").val();
+        var c4c_project = $("#c4c_project").val();
+
+        var c4c_projctCd1 = $("#c4c_projctCd1").val();
+        var c4c_projectCode_n = $("#c4c_projectCode_n").val();           
+
+        var mode_section = $("#c4c_Section_Download_Now").attr("mode_section");
+        var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+        if(c4c_Section_name==''){
+            $(".c4c_SectionDownloadError").css('border-color', '');
+            $("#c4c_Section_Download_name").css('border-color', 'red');
+            $("#c4c_Section_Download_name").css('border', '1px solid red');
+            return false;
+            /*
+        } else if(c4c_Section_name_last==''){
+            $(".c4c_SectionDownloadError").css('border-color', '');
+            $("#c4c_Section_Download_last_name").css('border-color', 'red');
+            $("#c4c_Section_Download_last_name").css('border', '1px solid red');
+            return false; */        
+        } else if(c4c_Section_email==''){
+            $(".c4c_SectionDownloadError").css('border-color', '');
+            $("#c4c_Section_Download_email").css('border-color', 'red');
+            $("#c4c_Section_Download_email").css('border', '1px solid red');
+            return false;        
+        } else if(!pattern.test(c4c_Section_email)){
+            $(".c4c_SectionDownloadError").css('border-color', '');
+            $("#c4c_Section_Download_email").css('border-color', 'red');
+            $("#c4c_Section_Download_email").css('border', '1px solid red');
+            return false;
+        } else if(c4c_Section_phone==''){
+            $(".c4c_SectionDownloadError").css('border-color', '');
+            $("#c4c_Section_Download_phone").css('border-color', 'red');
+            $("#c4c_Section_Download_phone").css('border', '1px solid red');
+            return false;
+        } else if(phoneStrCount!=10){
+            $(".c4c_SectionDownloadError").css('border-color', '');
+            $("#c4c_Section_Download_phone").css('border-color', 'red');
+            $("#c4c_Section_Download_phone").css('border', '1px solid red');
+            
+            $("#downloadEnquireNow_error").css('display','block');
+            $("#downloadEnquireNow_error").html("Please Enter 10 digit Mobile Number Only");            
+            return false;
+        } else if(phoneStrsplit[0]==0){
+            $(".modalBrouchureError").css('border-color', '');
+            $("#modalBrouchurephone").css('border-color', 'red');
+            $("#modalBrouchurephone").css('border', '1px solid red');
+            
+            $("#modalFormOne_error").css('display','block');
+            $("#modalFormOne_error").html("Please Enter a valid 10 digit Mobile Number starting without zero");            
+            return false;                        
+        } else {
+            $(".c4c_SectionDownloadError").css('border-color', '');
+            $("#downloadEnquireNow_error").css('display','none');
+            $("#downloadEnquireNow_error").html("");
+            $("#downloadEnquireNow_success").css('display','block');
+            $("#downloadEnquireNow_success").html("Please Wait Loading...!");
+            $("#c4c_Section_Download_Now").css('display','none');            
+                        //gcap start
+
+            //ajax start
+                $("#c4c_Section_Download_Now").html('loading');
+                $.ajax({
+                    //url: "c4c_api_call.php",
+                    url: "final_v2.php",
+                    type: "post",
+                    data: {'c4c_Section_name':c4c_Section_name,'c4c_Section_name_last':c4c_Section_name_last,'c4c_Section_email':c4c_Section_email,'c4c_Section_phone':c4c_Section_phone,'mode':mode_section,'c4c_modeOfEnquiry':c4c_modeOfEnquiry,'c4c_projectDescriptionLead':c4c_projectDescriptionLead,'c4c_source':c4c_source,'c4c_campaign':c4c_campaign,'c4c_location':c4c_location,'c4c_utmCampaign':c4c_utmCampaign,'c4c_secondaryLeadSource':c4c_secondaryLeadSource,'c4c_website':c4c_website,'c4c_project':c4c_project,'FormId':FormId,'c4c_projctCd1':c4c_projctCd1,'c4c_projectCode_n':c4c_projectCode_n} ,
+                    success: function (response) {
+                    var results = JSON.parse(response);
+                    console.log(results);
+                    if(results.status){
+                      window.dataLayer = window.dataLayer || []
+                      dataLayer.push({
+                        'event': 'brochuredownload-form-submission-citadel',
+                       'formType': FormId,
+                       'formPosition': 'Footer'
+                      });
+                        $("#downloadEnquireNow_success").css('display','block');
+                        $("#downloadEnquireNow_success").html(results.msg);
+                        $("#c4c_Section_Download_Now").html('Submit');
+                        var pdfUrl = 'https://www.brigadecitadel.com/moti-nagar/thankyou.html';
+                        var parentOpener = window.opener;
+                        window.opener = null;
+                        window.open(pdfUrl,"_blank");
+                        window.opener = parentOpener;
+                    } 
+                       
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                       console.log(textStatus, errorThrown);
+                    }
+                });
+                //ajax post a data now end
+            //ajax end
+
+            //gcap end 
+        }
+         		//form.submit();
+         		} else {
+         		alert('Please confirm captcha to proceed');
+         		}
+});  
+/* c4c_Section_Download_Now start */
+/* modalBrouchure_Enquire_Now start */
+$( "body" ).delegate( "#modalBrouchure_Enquire_Now", "click", function() {
+if (grecaptcha.getResponse(modalBrouchure_Enquire_Now_cap)) {
+         	$("#modalBrouchure_Enquire_Now").attr("formid","Contact Us");
+        var FormId = $("#modalBrouchure_Enquire_Now").attr("formid");
+        var c4c_Section_name = $("#modalBrouchurename").val();
+        
+        var c4c_Section_lastname = $("#modalBrouchurenamelast").val();
+        var c4c_Section_email = $("#modalBrouchureemail").val();
+        var c4c_Section_phone = $("#modalBrouchurephone").val();
+        var phoneStrCount = $("#modalBrouchurephone").val().length;
+        var phoneStrsplit = $("#modalBrouchurephone").val().split("");        
+
+
+        var c4c_modeOfEnquiry = $("#c4c_modeOfEnquiry").val();
+        var c4c_projectDescriptionLead = $("#c4c_projectDescriptionLead").val();
+        var c4c_source = $("#c4c_source").val();
+        var c4c_campaign = $("#c4c_campaign").val();
+        var c4c_location = $("#c4c_location").val();
+        var c4c_utmCampaign = $("#c4c_utmCampaign").val();
+        var c4c_secondaryLeadSource = $("#c4c_secondaryLeadSource").val();
+        var c4c_website = $("#c4c_website").val();
+        var c4c_project = $("#c4c_project").val();
+
+        var c4c_projctCd1 = $("#c4c_projctCd1").val();
+        var c4c_projectCode_n = $("#c4c_projectCode_n").val();           
+
+        var mode_section = $("#modalBrouchure_Enquire_Now").attr("mode_section");
+        var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+        if(c4c_Section_name==''){
+            $(".modalBrouchureError").css('border-color', '');
+            $("#modalBrouchurename").css('border-color', 'red');
+            $("#modalBrouchurename").css('border', '1px solid red');
+            return false;
+            /*
+        } else if(c4c_Section_lastname==''){
+            $(".modalBrouchureError").css('border-color', '');
+            $("#c4c_Section_lastname").css('border-color', 'red');
+            $("#c4c_Section_lastname").css('border', '1px solid red');
+            return false;*/                    
+        } else if(c4c_Section_email==''){
+            $(".modalBrouchureError").css('border-color', '');
+            $("#modalBrouchureemail").css('border-color', 'red');
+            $("#modalBrouchureemail").css('border', '1px solid red');
+            return false;        
+        } else if(!pattern.test(c4c_Section_email)){
+            $(".modalBrouchureError").css('border-color', '');
+            $("#modalBrouchureemail").css('border-color', 'red');
+            $("#modalBrouchureemail").css('border', '1px solid red');
+            return false;
+        } else if(c4c_Section_phone==''){
+            $(".modalBrouchureError").css('border-color', '');
+            $("#modalBrouchurephone").css('border-color', 'red');
+            $("#modalBrouchurephone").css('border', '1px solid red');
+            return false;
+        } else if(phoneStrCount!=10){
+            $(".modalBrouchureError").css('border-color', '');
+            $("#modalBrouchurephone").css('border-color', 'red');
+            $("#modalBrouchurephone").css('border', '1px solid red');
+            
+            $("#modalFormOne_error").css('display','block');
+            $("#modalFormOne_error").html("Please Enter 10 digit Mobile Number Only");            
+            return false;
+        } else if(phoneStrsplit[0]==0){
+            $(".modalBrouchureError").css('border-color', '');
+            $("#modalBrouchurephone").css('border-color', 'red');
+            $("#modalBrouchurephone").css('border', '1px solid red');
+            
+            $("#modalFormOne_error").css('display','block');
+            $("#modalFormOne_error").html("Please Enter a valid 10 digit Mobile Number starting without zero");            
+            return false;                        
+        } else {
+            $(".modalBrouchureError").css('border-color', '');
+            $("#modalFormOne_error").css('display','none');
+            $("#modalFormOne_error").html("");
+            $("#modalFormOne_success").css('display','block');
+            $("#modalFormOne_success").html("Please Wait Loading...!");
+            $("#modalBrouchure_Enquire_Now").css('display','none');
+                        //gcap start
+   
+                
+    // do request for recaptcha token
+    // response is promise with passed token
+   
+
+        // add token to form
+      
+            //ajax start
+                $("#modalBrouchure_Enquire_Now").html('loading');
+                $.ajax({
+                    //url: "c4c_api_call.php",
+                    url: "final_v2.php",
+                    type: "post",
+                    data: {'c4c_Section_name':c4c_Section_name,'c4c_Section_name_last':c4c_Section_lastname,'c4c_Section_email':c4c_Section_email,'c4c_Section_phone':c4c_Section_phone,'mode':mode_section,'c4c_modeOfEnquiry':c4c_modeOfEnquiry,'c4c_projectDescriptionLead':c4c_projectDescriptionLead,'c4c_source':c4c_source,'c4c_campaign':c4c_campaign,'c4c_location':c4c_location,'c4c_utmCampaign':c4c_utmCampaign,'c4c_secondaryLeadSource':c4c_secondaryLeadSource,'c4c_website':c4c_website,'c4c_project':c4c_project,'FormId':FormId,'c4c_projctCd1':c4c_projctCd1,'c4c_projectCode_n':c4c_projectCode_n} ,
+                    success: function (response) {
+                    var results = JSON.parse(response);
+                    console.log(results);
+                    if(results.status){
+                      window.dataLayer = window.dataLayer || []
+                      dataLayer.push({
+                      'event': 'contact-form-submission-citadel',
+                       'formType': 'Contact Us',
+                       'formPosition': 'Footer'
+                      });
+                        $("#modalFormOne_success").css('display','block');
+                        $("#modalFormOne_success").html(results.msg);
+                        $("#modalBrouchure_Enquire_Now").html('Submit');
+                        var pdfUrl = 'https://www.brigadecitadel.com/moti-nagar/thankyou.html';
+                        var parentOpener = window.opener;
+                        window.opener = null;
+                        window.open(pdfUrl,"_blank");
+                        window.opener = parentOpener;
+                    } 
+                       
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                       console.log(textStatus, errorThrown);
+                    }
+                });
+                //ajax post a data now end
+            //ajax end
+  
+
+            //gcap end 
+        }
+         		//form.submit();
+         		} else {
+         		alert('Please confirm captcha to proceed');
+         		}
+});  
+/* modalBrouchure_Enquire_Now start */
+/* popupC4C_Call start */ 
+  $( "#popupC4C_Call" ).click(function() {
+     
+      if (grecaptcha.getResponse(popupC4C_Call_cap)) {
+         	$("#popupC4C_Call").attr("formid","POPUP Enquire Now");
+        var FormId = $("#popupC4C_Call").attr("formid");
+        var c4c_Section_name = $("#popupname").val();
+        var c4c_Section_lastname = $("#popupnamelast").val();
+        var c4c_Section_email = $("#popupemail").val();
+        var c4c_Section_phone = $("#popupphone").val();
+        var phoneStrCount = $("#popupphone").val().length;
+        var phoneStrsplit = $("#popupphone").val().split("");
+        
+
+        var c4c_modeOfEnquiry = $("#c4c_modeOfEnquiry").val();
+        var c4c_projectDescriptionLead = $("#c4c_projectDescriptionLead").val();
+        var c4c_source = $("#c4c_source").val();
+        var c4c_campaign = $("#c4c_campaign").val();
+        var c4c_location = $("#c4c_location").val();
+        var c4c_utmCampaign = $("#c4c_utmCampaign").val();
+        var c4c_secondaryLeadSource = $("#c4c_secondaryLeadSource").val();
+        var c4c_website = $("#c4c_website").val();
+        var c4c_project = $("#c4c_project").val();
+
+        var c4c_projctCd1 = $("#c4c_projctCd1").val();
+        var c4c_projectCode_n = $("#c4c_projectCode_n").val();                   
+
+        var mode_section = $("#popupC4C_Call").attr("mode_section");
+        var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+        if(c4c_Section_name==''){
+            $(".popupError").css('border-color', '');
+            $("#popupname").css('border-color', 'red');
+            $("#popupname").css('border', '1px solid red');
+            return false;
+        } else if(c4c_Section_lastname==''){
+            $(".popupError").css('border-color', '');
+            $("#popupnamelast").css('border-color', 'red');
+            $("#popupnamelast").css('border', '1px solid red');
+            return false;        
+        } else if(c4c_Section_email==''){
+            $(".popupError").css('border-color', '');
+            $("#popupemail").css('border-color', 'red');
+            $("#popupemail").css('border', '1px solid red');
+            return false;        
+        } else if(!pattern.test(c4c_Section_email)){
+            $(".popupError").css('border-color', '');
+            $("#popupemail").css('border-color', 'red');
+            $("#popupemail").css('border', '1px solid red');
+            return false;
+        } else if(c4c_Section_phone==''){
+            $(".popupError").css('border-color', '');
+            $("#popupphone").css('border-color', 'red');
+            $("#popupphone").css('border', '1px solid red');
+            return false;
+        } else if(phoneStrCount!=10){
+            $(".popupError").css('border-color', '');
+            $("#popupphone").css('border-color', 'red');
+            $("#popupphone").css('border', '1px solid red');
+            
+            $("#intrested_error").css('display','block');
+            $("#intrested_error").html("Please Enter 10 digit Mobile Number Only");            
+            return false;
+        } else if(phoneStrsplit[0]==0){
+            $(".popupError").css('border-color', '');
+            $("#popupphone").css('border-color', 'red');
+            $("#popupphone").css('border', '1px solid red');
+            
+            $("#intrested_error").css('display','block');
+            $("#intrested_error").html("Please Enter a valid 10 digit Mobile Number starting without zero");            
+            return false;                        
+        } else {
+    //ajax start
+            $(".popupError").css('border-color', '');
+            $("#intrested_error").css('display','none');
+            $("#intrested_error").html("");
+            $("#intrested_success").css('display','block');
+            $("#intrested_success").html("Please Wait Loading...!");
+            $("#popupC4C_Call").css('display','none');  
+                
+                $("#popupC4C_Call").html('loading');
+                $.ajax({
+                    //url: "c4c_api_call.php",
+                    url: "final_v2.php",
+                    type: "post",
+                    data: {'c4c_Section_name':c4c_Section_name,'c4c_Section_name_last':c4c_Section_lastname,'c4c_Section_email':c4c_Section_email,'c4c_Section_phone':c4c_Section_phone,'mode':mode_section,'c4c_modeOfEnquiry':c4c_modeOfEnquiry,'c4c_projectDescriptionLead':c4c_projectDescriptionLead,'c4c_source':c4c_source,'c4c_campaign':c4c_campaign,'c4c_location':c4c_location,'c4c_utmCampaign':c4c_utmCampaign,'c4c_secondaryLeadSource':c4c_secondaryLeadSource,'c4c_website':c4c_website,'c4c_project':c4c_project,'FormId':FormId,'c4c_projctCd1':c4c_projctCd1,'c4c_projectCode_n':c4c_projectCode_n} ,
+                    success: function (response) {
+                    var results = JSON.parse(response);
+                    console.log(results);
+                    if(results.status){
+                      window.dataLayer = window.dataLayer || []
+                      dataLayer.push({
+                       'event': 'popup-form-submission-citadel',
+                       'formType': 'POPUP Enquire Now',
+                       'formPosition': 'Footer'
+                      });
+                        $("#intrested_success").css('display','block');
+                        $("#intrested_success").html(results.msg);
+                        $("#popupC4C_Call").html('Submit');
+                        var pdfUrl = 'https://www.brigadecitadel.com/moti-nagar/thankyou.html';
+                        var parentOpener = window.opener;
+                        window.opener = null;
+                        window.open(pdfUrl,"_blank");
+                        window.opener = parentOpener;
+                    } 
+                       
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                       console.log(textStatus, errorThrown);
+                    }
+                });
+                //ajax post a data now end
+            //ajax end  
+        }
+         		//form.submit();
+         		} else {
+         		alert('Please confirm captcha to proceed');
+         		}
+             
+});
+/* popupC4C_Call end */
+
+});
+
+    </script>
+
+    <script>
+      videojs.options.flash.swf = "video-js.swf";
+      document.getElementById("year").innerHTML = (new Date().getFullYear());
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enquire Now</title>
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>Enquire Now</h1>
+      </div>
+      <form action="" method="POST">
+        {% csrf_token %}
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+        </div>
+        <div class="info">
+          <input class="name" type="text" name="firstname" placeholder="First name">
+          <input type="text" name="Lastname" placeholder="Last name">
+          <input type="text" name="mobilenumber" placeholder="mobile number">
+          <input type="text" name="email" placeholder="Email">
+        </div>
+        <button type="submit" href="/">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
