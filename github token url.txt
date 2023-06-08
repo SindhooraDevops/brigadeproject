@@ -1,4 +1,0 @@
-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 - github token url
-
-
-sqp_f7c997795e4d8edbe30d5be7bdef8bc3b5a6682d- sonarqube token
